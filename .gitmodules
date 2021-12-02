@@ -5,3 +5,7 @@
 	path = public
 	url = https://github.com/EsbenBL/site_host.git
 	branch = main
+[submodule "to_site"]
+	path = to_site
+	url = https://github.com/EsbenBL/site_host.git
+	branch = main
