@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = 'https://example.com/'
+baseURL = 'https://esbenbl.github.io/site_host/'
 title = 'Communities of social science'
 theme = 'hugo-book'
 canonifyURLs = true
