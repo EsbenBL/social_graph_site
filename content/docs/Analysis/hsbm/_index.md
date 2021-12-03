@@ -5,3 +5,5 @@ title: "HSBM"
 ---
 
 Den her er bare for at se hvordan man laver drop-down ting 
+
+![HSBM](/hsbm.png)

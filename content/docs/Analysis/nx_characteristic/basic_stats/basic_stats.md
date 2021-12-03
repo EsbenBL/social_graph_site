@@ -1,3 +1,8 @@
+---
+weight : 1
+title: "Basic Statistics"
+---
+
 # Basic Statistics
 
 Below, we plot the network, excluding singleton nodes:

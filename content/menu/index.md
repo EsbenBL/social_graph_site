@@ -2,6 +2,10 @@
 headless: true
 ---
 
+- [**The Project**]({{< relref "/docs/the_project" >}})
+- [Louvain Modularity]({{< relref "/docs/the_project/Modularity" >}})
+<br />
+
 - [**Analysis**]({{< relref "/docs/Analysis" >}})
 - [Network Characteristics]({{< relref "/docs/Analysis/nx_characteristic" >}})
   - [Basic Stats]({{< relref "/docs/Analysis/nx_characteristic/basic_stats" >}})
