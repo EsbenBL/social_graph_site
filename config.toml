@@ -1,4 +1,6 @@
 baseURL = 'https://esbenbl.github.io/site_host/'
 languageCode = 'en-us'
 title = 'Virker det med Desktop Ganon også?? OG ASGEr'
+canonifyURLs = true
 theme = "ananke" 
+

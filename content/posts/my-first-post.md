@@ -1,6 +1,9 @@
 ---
-title: "DEn første post er BIMS! Ligesom Cherry! "
-date: 2021-12-02T15:24:57+01:00
+title: "My First Post"
+date: 2021-12-02T15:56:05+01:00
 ---
+Hund
+![Hund](/ny_hund.jpg)
 
-Kan den opdateres? 
+Og Esben
+![Esben](/esben.jpg)
