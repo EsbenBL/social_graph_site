@@ -8,7 +8,9 @@ type: docs
 {{< columns >}}
 ## Kolonne 1
 
-Man kan skrive ting med **fed** med to *
+Man kan skrive ting med **fed** med to * og her er ganon:
+
+![Ganon](/Ganon.png)
 
 <--->
 

@@ -3,6 +3,7 @@
 baseURL = 'https://example.com/'
 title = 'Communities of social science'
 theme = 'hugo-book'
+canonifyURLs = true
 
 # Book configuration
 disablePathToLower = true

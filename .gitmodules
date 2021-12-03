@@ -9,3 +9,6 @@
 	path = to_site
 	url = https://github.com/EsbenBL/site_host.git
 	branch = main
+[submodule "themes/hugo-book"]
+	path = themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book
