@@ -1,19 +1,22 @@
 ---
 title: "Datasets"
 ---
-# Data
+# **Data**
 
-Here we have the datasets which we have used for the project. Here we link to the five social science lists, which our project is build upon.
+Here we have the datasets which we have used for the project.
 
-[Sociologists](https://en.wikipedia.org/wiki/List_of_sociologists)
+## The Wikipedia Lists
+Here we link to the five social science lists, which our project is build upon.
 
-[Psychologists](https://en.wikipedia.org/wiki/List_of_psychologists)
+- [Sociologists](https://en.wikipedia.org/wiki/List_of_sociologists)
 
-[Social Scientists](https://en.wikipedia.org/wiki/List_of_political_scientists)
+- [Psychologists](https://en.wikipedia.org/wiki/List_of_psychologists)
 
-[Economists](https://en.wikipedia.org/wiki/List_of_economists)
+- [Political Scientists](https://en.wikipedia.org/wiki/List_of_political_scientists)
 
-[Anthropologists](https://en.wikipedia.org/wiki/List_of_anthropologists)
+- [Economists](https://en.wikipedia.org/wiki/List_of_economists)
+
+- [Anthropologists](https://en.wikipedia.org/wiki/List_of_anthropologists)
 
 Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:
 
@@ -23,6 +26,21 @@ data = requests.get(dataset_url).json()
 ```
 Note that all of the datasets are in a json/dictionary format.
 
-[Edgelist data](/placeholder.json)
+## Network Data
 
-[Text dataset](/placeholder.json)
+- [Edgelist](https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/edge_list.json)
+
+- [Nodelist](https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/node_list.json)
+
+- [Dictionary of the scientists and their field](https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/inv_science_name_dict.json)
+
+- [Scientists, their field, and network community](https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/name_field_community.json)
+
+## Text Data
+
+- [Cleaned Wikipedia content](https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/wiki_dict_noname.json)
+
+## HSBM Data
+
+For a more indepth rundown of the data cleaning process, the code is available in following [this link to a ipynb-notebook](https://github.com/EsbenBL/social_graph_exam/blob/main/Explainer_notebook.ipynb)
+
