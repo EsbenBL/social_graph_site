@@ -37,4 +37,3 @@ Her kan også stå ting. Man laver punkform: Således
 - Pedum ne indigenae finire invergens carpebat
 - Velit posses summoque
 - De fumos illa foret
-
