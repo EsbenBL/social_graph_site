@@ -4,6 +4,7 @@ headless: true
 
 - [**The Project**]({{< relref "/docs/the_project" >}})
 - [Louvain Modularity]({{< relref "/docs/the_project/Modularity" >}})
+- [Datasets for project]({{< relref "/docs/the_project/Datasets" >}})
 <br />
 
 - [**Analysis**]({{< relref "/docs/Analysis" >}})
