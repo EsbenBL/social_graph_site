@@ -2,38 +2,30 @@
 title: Introduction
 type: docs
 ---
-
-# Communities of the social sciences
+<h1><center>Network Communities in the Social Sciences!</center></h1>
 
 {{< columns >}}
-## Kolonne 1
+<br><br>
 
-Man kan skrive ting med **fed** med to * og her er ganon:
+Welcome to our project on the formation of communities within the social sciences! 
+<br>
 
-![Ganon](/Ganon.png)
+On this website, you'll find it all. Which social scientist talk about who? Which disciplines are most isolated? And which ones are most intertwined? Is the conventional division between anthropology, sociology, economics, political science, and psychology meaningful, or would it make sense to redefine the diciplinary boundaries based on content rather than tradition? 
+<br>
+
+You're about to find out.  
 
 <--->
 
-## Kolonne 2
+<left>
+<style>
+.nx_gif {
+  border: 1px solid #e24908;
+  max-width: 100%;
 
-Man kan skrive ting med kursiv med en _ på hver side _furtique_
+}
+</style>
+<img src="https://github.com/EsbenBL/social_graph_exam/blob/main/gifs_til_site/vores_netv%C3%A6rk.gif?raw=true" class="nx_gif">
+</left>
+
 {{< /columns >}}
-
-
-## Overskrift 3
-
-Man kan lave gode ting sådan her (FORSTÅR IKKE HELT HVORDAN DET FUNGERER)
-
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
-
-## Overskrift 4
-Her kan også stå ting. Man laver punkform: Således
-- Pedum ne indigenae finire invergens carpebat
-- Velit posses summoque
-- De fumos illa foret

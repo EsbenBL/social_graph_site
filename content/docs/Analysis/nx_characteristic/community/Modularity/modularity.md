@@ -1,6 +1,7 @@
 ---
 title: "Louvain Modularity"
 ---
+
 # Louvain Modularity
 
 We optimize modularity based on the Louvian Partition Algorithm, which is:
@@ -10,3 +11,6 @@ We optimize modularity based on the Louvian Partition Algorithm, which is:
 {{< /katex >}}
 
 Is used to make [these networks](/docs/Analysis/nx_characteristic/community/community/)
+
+
+{{< readfile file="/static/tables/community_tf.html" >}}

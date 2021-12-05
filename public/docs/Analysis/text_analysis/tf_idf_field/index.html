@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TF-IDF within the Disciplines#To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the term frequency (TF) as well as the term frequency - inverse document frequency (TF-IDF) for each of the 5 fields.
+Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF within the Disciplines" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" />
+
+<title>TF-IDF within the Disciplines | Network Communities of the Social Sciences</title>
+<link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
+<link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/index.xml" title="Network Communities of the Social Sciences" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://esbenbl.github.io/site_host/"><span>Network Communities of the Social Sciences</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/" class="">The Project</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" class="">Datasets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/" class="">Analysis</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68e2ea6c27bd229d62d39f896b1f743d" class="toggle"  />
+    <label for="section-68e2ea6c27bd229d62d39f896b1f743d" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/" class="">Network Characteristics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/" class="">Basic Statistics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2554005d4f3bd19b5b37eee444fd4e29" class="toggle"  />
+    <label for="section-2554005d4f3bd19b5b37eee444fd4e29" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/" class="">Communities</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/" class="">Louvain Modularity</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
+    <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class=" active">TF-IDF within the Disciplines</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/" class="">TF-IDF within the Communities</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/SocialComplexityLab/socialgraphs2021.git" target="_blank" rel="noopener">
+        Examination in Social Graph 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/EsbenBL/social_graph_exam.git" target="_blank" rel="noopener">
+        Our Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>TF-IDF within the Disciplines</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="tf-idf-within-the-disciplines">
+  TF-IDF within the Disciplines
+  <a class="anchor" href="#tf-idf-within-the-disciplines">#</a>
+</h1>
+<p>To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the <code>term frequency</code> (TF) as well as the <code>term frequency - inverse document frequency</code> (TF-IDF) for each of the 5 fields.</p>
+<p>Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.</p>
+<p>For a further elaboration on both metrics follow 
+  <a href="https://sodas.ku.dk/people/Jonas_Pedersen__140x174.jpg">this link</a></p>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">TF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-of-the-scientific-disciplines">
+  TF of the scientific disciplines
+  <a class="anchor" href="#tf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Scientific Field</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>anth</th>
+      <td>university</td>
+      <td>anthropology</td>
+      <td>american</td>
+      <td>work</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>eco</th>
+      <td>economics</td>
+      <td>economic</td>
+      <td>university</td>
+      <td>theory</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>multiple</th>
+      <td>social</td>
+      <td>work</td>
+      <td>university</td>
+      <td>society</td>
+      <td>theory</td>
+    </tr>
+    <tr>
+      <th>pol</th>
+      <td>university</td>
+      <td>political</td>
+      <td>american</td>
+      <td>international</td>
+      <td>science</td>
+    </tr>
+    <tr>
+      <th>psy</th>
+      <td>psychology</td>
+      <td>university</td>
+      <td>work</td>
+      <td>research</td>
+      <td>theory</td>
+    </tr>
+    <tr>
+      <th>soc</th>
+      <td>university</td>
+      <td>social</td>
+      <td>sociology</td>
+      <td>work</td>
+      <td>new</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">TF-IDF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
+  TF-IDF of the scientific disciplines
+  <a class="anchor" href="#tf-idf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF-IDF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Scientific Field</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>anth</th>
+      <td>gorilla</td>
+      <td>apache</td>
+      <td>iroquois</td>
+      <td>zuni</td>
+      <td>olduvai</td>
+    </tr>
+    <tr>
+      <th>eco</th>
+      <td>econometric</td>
+      <td>econometrics</td>
+      <td>macroeconomic</td>
+      <td>keynesian</td>
+      <td>macroeconomics</td>
+    </tr>
+    <tr>
+      <th>multiple</th>
+      <td>khaldūn</td>
+      <td>habitus</td>
+      <td>samoan</td>
+      <td>hardt</td>
+      <td>psychoanalytic</td>
+    </tr>
+    <tr>
+      <th>pol</th>
+      <td>dodgson</td>
+      <td>arend</td>
+      <td>neorealism</td>
+      <td>ndp</td>
+      <td>tatu</td>
+    </tr>
+    <tr>
+      <th>psy</th>
+      <td>apa</td>
+      <td>psychoanalytic</td>
+      <td>psychotherapy</td>
+      <td>jungian</td>
+      <td>therapy</td>
+    </tr>
+    <tr>
+      <th>soc</th>
+      <td>wallpaper</td>
+      <td>sociologie</td>
+      <td>gemeinschaft</td>
+      <td>ortega</td>
+      <td>cyborg</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

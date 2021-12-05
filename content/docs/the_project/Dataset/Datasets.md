@@ -4,9 +4,10 @@ title: "Datasets"
 # **Data**
 
 Here we have the datasets which we have used for the project.
-
 ## The Wikipedia Lists
 Here we link to the five social science lists, which our project is build upon.
+
+{{< columns >}}
 
 - [Sociologists](https://en.wikipedia.org/wiki/List_of_sociologists)
 
@@ -17,6 +18,12 @@ Here we link to the five social science lists, which our project is build upon.
 - [Economists](https://en.wikipedia.org/wiki/List_of_economists)
 
 - [Anthropologists](https://en.wikipedia.org/wiki/List_of_anthropologists)
+
+<--->
+<left>
+<img src="https://i.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.webp" width=400 height=220>
+</left>
+{{< /columns >}}
 
 Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:
 
