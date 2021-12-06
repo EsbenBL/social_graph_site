@@ -3,6 +3,8 @@ title: Introduction
 type: docs
 ---
 <h1><center>Network Communities in the Social Sciences!</center></h1>
+<h15><center>by Asger Thomsen, Esben Lemminger & Sofie Astrupgaard</center></h15>
+
 
 {{< columns >}}
 <br><br>
