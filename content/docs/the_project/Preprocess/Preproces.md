@@ -1,5 +1,5 @@
 ---
-title: "Preproces"
+title: "Preprocess"
 ---
 # Proprocessing the data
 
