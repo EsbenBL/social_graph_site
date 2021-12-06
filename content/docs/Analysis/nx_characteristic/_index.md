@@ -12,12 +12,12 @@ In this section, we present basic network characteristic of our network, and car
 {{< columns >}}
 <br>
 
-[**Basic Statistics**](/docs/Analysis/nx_characteristic/basic_stats/basic_stats/)
+[**Basic Statistics**](/docs/Analysis/nx_characteristic/basic_stats/)
 <br>
 We present the network, some degree distributions, and stuff like that. 
 
 
-[**Community**](/docs/Analysis/nx_characteristic/community/community/)
+[**Community**](/docs/Analysis/nx_characteristic/community/)
 <br>
 We see how communities are formed in the network, based on the link distribution. 
 
