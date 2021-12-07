@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t&#39;\in{d}}f_{t&#39;,d}$, e.i. adjusted by the raw count of all the terms, $t&#39;$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF and TF-IDF" />
+<meta property="og:description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t&#39;\in{d}}f_{t&#39;,d}$, e.i. adjusted by the raw count of all the terms, $t&#39;$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/" /><meta property="article:section" content="docs" />
+
+
+
+<title>TF and TF-IDF | Network Communities of the Social Sciences</title>
+<link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
+<link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://esbenbl.github.io/site_host/"><span>Network Communities of the Social Sciences</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/" class="">The Project</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" class="">Datasets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/" class="">Preprocess</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/" class="">Analysis</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68e2ea6c27bd229d62d39f896b1f743d" class="toggle"  />
+    <label for="section-68e2ea6c27bd229d62d39f896b1f743d" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/" class="">Network Characteristics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1f1f1519b262e0924edfa1cfe72737e9" class="toggle"  />
+    <label for="section-1f1f1519b262e0924edfa1cfe72737e9" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/" class="">Basic Statistics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/" class="">Degree Distribution</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/" class="">Most Connected Nodes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/" class="">Communities</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
+    <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class="">TF-IDF within the Disciplines</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/" class="">TF-IDF within the Communities</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/" class="">Methodology</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/" class=" active">TF and TF-IDF</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/SocialComplexityLab/socialgraphs2021.git" target="_blank" rel="noopener">
+        Examination in Social Graph 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/EsbenBL/social_graph_exam.git" target="_blank" rel="noopener">
+        Our Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>TF and TF-IDF</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="tf-and-tf-idf">
+  TF and TF-IDF
+  <a class="anchor" href="#tf-and-tf-idf">#</a>
+</h1>
+<p>According to 
+  <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">Wiki</a>, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t'\in{d}}f_{t',d}$, e.i. adjusted by the raw count of all the terms, $t'$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$. The equation for the standardized raw count (term frequency) is:
+$$TF_{t,d}=\frac{f_{t,d}}{\sum_{t'\in{d}} f_{t',d}}$$</p>
+<p>Further, we use the inverse document frequency, IDF, to diminish the weight of terms that occur frequently across all documents and increase the weight of terms that are unique to a few documents. IDF is calculated as: 
+$$idf(t,D)=log\left(\frac{N}{{d\in{D}:t\in{d}}|}\right)$$</p>
+<p>where $N$ is the number of documents, and ${{d\in{D}:t\in{d}}|}$ is the number of documents the term $t$ appears in (As our vocabulary is based on the words of the documents, we do not need to worry about a scenario where a term doesn&rsquo;t appear in any of the documents, which would otherwise  result in a division by 0).</p>
+<p>TF-IDF is simply the product of TF and IDF:
+$$TFIDF(t,d,D) = TF\bullet idf$$</p>
+<p>Thus, if a term appears in all the documents, its weight in all the documents will be reduced to 0, as:  $\frac{N}{{d\in{D}:t\in{d}}|} = 1 \rightarrow IDF=log(1)=0$. Further, if a term does not appear in a document, its weight in that document will also be reduced to 0, as $f_{t,d}=0$. On the other hand, a high weight in TF–IDF is reached by a high term frequency (in the given document) and a low document frequency of the term in the whole collection of documents.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

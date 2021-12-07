@@ -3,7 +3,7 @@ title: Introduction
 type: docs
 ---
 <h1><center>Network Communities in the Social Sciences!</center></h1>
-<h15><center>by Asger Thomsen, Esben Lemminger & Sofie Astrupgaard</center></h15>
+<center>by Asger Thomsen, Esben Lemminger, & Sofie Læbo</center>
 
 
 {{< columns >}}
@@ -12,7 +12,7 @@ type: docs
 Welcome to our project on the formation of communities within the social sciences! 
 <br>
 
-On this website, you'll find it all. Which social scientist talk about who? Which disciplines are most isolated? And which ones are most intertwined? Is the conventional division between anthropology, sociology, economics, political science, and psychology meaningful, or would it make sense to redefine the diciplinary boundaries based on content rather than tradition? 
+On this website, you'll find it all. Which social scientist talks about who? Which disciplines are most isolated? And which ones are most intertwined? Is the conventional division between anthropology, sociology, economics, political science, and psychology meaningful, or would it make sense to redefine the diciplinary boundaries based on content rather than tradition? 
 <br>
 
 You're about to find out.  

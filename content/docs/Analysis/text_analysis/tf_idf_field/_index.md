@@ -8,7 +8,7 @@ To find out which concept/content are most definitive for each of the scientific
 
 Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.  
 
-For a further elaboration on both metrics follow [this link](https://sodas.ku.dk/people/Jonas_Pedersen__140x174.jpg)
+For a further elaboration on both metrics follow [this link](/docs/methodology/tf_idf_method/tf_idf/)
 
 {{< tabs "uniqueid" >}}
 {{< tab "TF" >}}
